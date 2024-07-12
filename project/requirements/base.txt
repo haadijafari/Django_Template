@@ -1,0 +1,19 @@
+django>4.2,<4.3
+python-dotenv
+pillow
+django-phone-field
+django-ckeditor>6,<7
+django-robots
+django-taggit
+django-compressor
+beautifulsoup4 # for parser compressor.parser.BeautifulSoupParser and compressor.parser.LxmlParser
+html5lib # parser compressor.parser.Html5LibParser
+csscompressor # For the csscompressor filter compressor.filters.cssmin.CSSCompressorFilter
+calmjs.parse # For the Calmjs filter compressor.filters.jsmin.CalmjsFilter
+
+# reCaptcha
+django-recaptcha==3.0.0
+django_multi_captcha_admin
+
+# Security
+django-csp

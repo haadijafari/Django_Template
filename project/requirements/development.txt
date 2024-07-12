@@ -1,0 +1,7 @@
+-r base.txt
+
+django-debug-toolbar
+
+django-extensions
+pygraphviz # for extensions
+Werkzeug  # for extensions
