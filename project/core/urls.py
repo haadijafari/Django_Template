@@ -24,6 +24,7 @@ from core.settings.base import DEBUG
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', include('apps.index.urls')),
     # path('api-auth/', include('rest_framework.urls'))
 ]
 

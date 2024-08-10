@@ -24,6 +24,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     # Project Apps
     'auths.user',
+    'apps.index',
     # Modules
     # 'rest_framework',
 ]
