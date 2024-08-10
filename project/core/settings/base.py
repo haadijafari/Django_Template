@@ -25,7 +25,7 @@ INSTALLED_APPS = [
     # Project Apps
     'auths.user',
     # Modules
-    'rest_framework',
+    # 'rest_framework',
 ]
 
 MIDDLEWARE = [
