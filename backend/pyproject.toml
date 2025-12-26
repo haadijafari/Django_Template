@@ -1,7 +1,7 @@
 [project]
-name = "django-docker-template"
+name = "django-template"
 version = "0.1.0"
-description = "Add your description here"
+description = "The Ultimate Django Template"
 readme = "README.md"
 requires-python = ">=3.12,<=3.13"
 dependencies = [
