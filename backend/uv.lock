@@ -87,63 +87,6 @@ wheels = [
 ]
 
 [[package]]
-name = "django-docker-template"
-version = "0.1.0"
-source = { virtual = "." }
-dependencies = [
-    { name = "django" },
-    { name = "django-ckeditor" },
-    { name = "django-cors-headers" },
-    { name = "django-csp" },
-    { name = "django-filter" },
-    { name = "django-multi-captcha-admin" },
-    { name = "django-recaptcha" },
-    { name = "django-robots" },
-    { name = "django-taggit" },
-    { name = "djangorestframework" },
-    { name = "drf-spectacular" },
-    { name = "markdown" },
-    { name = "psycopg", extra = ["binary"] },
-    { name = "python-dotenv" },
-    { name = "whitenoise" },
-]
-
-[package.dev-dependencies]
-dev = [
-    { name = "django-debug-toolbar" },
-    { name = "django-extensions" },
-    { name = "pygraphviz" },
-    { name = "werkzeug" },
-]
-
-[package.metadata]
-requires-dist = [
-    { name = "django", specifier = ">5.2,<5.3" },
-    { name = "django-ckeditor", specifier = ">6,<7" },
-    { name = "django-cors-headers", specifier = ">=4.7.0" },
-    { name = "django-csp", specifier = ">=4.0" },
-    { name = "django-filter", specifier = ">=25.1" },
-    { name = "django-multi-captcha-admin", specifier = ">=2.0.0" },
-    { name = "django-recaptcha", specifier = "==3.0.0" },
-    { name = "django-robots", specifier = ">=6.1" },
-    { name = "django-taggit", specifier = ">=6.1.0" },
-    { name = "djangorestframework", specifier = ">=3.16.0" },
-    { name = "drf-spectacular", specifier = ">=0.28.0" },
-    { name = "markdown", specifier = ">=3.8.2" },
-    { name = "psycopg", extras = ["binary"], specifier = ">=3.2.9" },
-    { name = "python-dotenv", specifier = ">=1.1.1" },
-    { name = "whitenoise", specifier = ">=6.9.0" },
-]
-
-[package.metadata.requires-dev]
-dev = [
-    { name = "django-debug-toolbar", specifier = ">=5.2.0" },
-    { name = "django-extensions", specifier = ">=4.1" },
-    { name = "pygraphviz", specifier = ">=1.14" },
-    { name = "werkzeug", specifier = ">=3.1.3" },
-]
-
-[[package]]
 name = "django-extensions"
 version = "4.1"
 source = { registry = "https://pypi.org/simple" }
@@ -219,6 +162,63 @@ dependencies = [
 sdist = { url = "https://files.pythonhosted.org/packages/34/a6/f1beaf8f552fe90c153cc039316ebab942c23dfbc88588dde081fefca816/django_taggit-6.1.0.tar.gz", hash = "sha256:c4d1199e6df34125dd36db5eb0efe545b254dec3980ce5dd80e6bab3e78757c3", size = 38151, upload-time = "2024-09-29T08:07:39.477Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/6b/34/4185c345530b91d05cb82e05d07148f481a5eb5dc2ac44e092b3daa6f206/django_taggit-6.1.0-py3-none-any.whl", hash = "sha256:ab776264bbc76cb3d7e49e1bf9054962457831bd21c3a42db9138b41956e4cf0", size = 75749, upload-time = "2024-09-29T08:07:14.612Z" },
+]
+
+[[package]]
+name = "django-template"
+version = "0.1.0"
+source = { virtual = "." }
+dependencies = [
+    { name = "django" },
+    { name = "django-ckeditor" },
+    { name = "django-cors-headers" },
+    { name = "django-csp" },
+    { name = "django-filter" },
+    { name = "django-multi-captcha-admin" },
+    { name = "django-recaptcha" },
+    { name = "django-robots" },
+    { name = "django-taggit" },
+    { name = "djangorestframework" },
+    { name = "drf-spectacular" },
+    { name = "markdown" },
+    { name = "psycopg", extra = ["binary"] },
+    { name = "python-dotenv" },
+    { name = "whitenoise" },
+]
+
+[package.dev-dependencies]
+dev = [
+    { name = "django-debug-toolbar" },
+    { name = "django-extensions" },
+    { name = "pygraphviz" },
+    { name = "werkzeug" },
+]
+
+[package.metadata]
+requires-dist = [
+    { name = "django", specifier = ">5.2,<5.3" },
+    { name = "django-ckeditor", specifier = ">6,<7" },
+    { name = "django-cors-headers", specifier = ">=4.7.0" },
+    { name = "django-csp", specifier = ">=4.0" },
+    { name = "django-filter", specifier = ">=25.1" },
+    { name = "django-multi-captcha-admin", specifier = ">=2.0.0" },
+    { name = "django-recaptcha", specifier = "==3.0.0" },
+    { name = "django-robots", specifier = ">=6.1" },
+    { name = "django-taggit", specifier = ">=6.1.0" },
+    { name = "djangorestframework", specifier = ">=3.16.0" },
+    { name = "drf-spectacular", specifier = ">=0.28.0" },
+    { name = "markdown", specifier = ">=3.8.2" },
+    { name = "psycopg", extras = ["binary"], specifier = ">=3.2.9" },
+    { name = "python-dotenv", specifier = ">=1.1.1" },
+    { name = "whitenoise", specifier = ">=6.9.0" },
+]
+
+[package.metadata.requires-dev]
+dev = [
+    { name = "django-debug-toolbar", specifier = ">=5.2.0" },
+    { name = "django-extensions", specifier = ">=4.1" },
+    { name = "pygraphviz", specifier = ">=1.14" },
+    { name = "werkzeug", specifier = ">=3.1.3" },
 ]
 
 [[package]]
