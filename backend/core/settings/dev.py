@@ -23,13 +23,12 @@ MIDDLEWARE += [
 STATIC_URL = "/static/"
 MEDIA_URL = "/media/"
 
-# Root folders for collected static files and media files (via 'collectstatic')
-STATIC_ROOT = BASE_DIR / "static_cdn"
-MEDIA_ROOT = BASE_DIR / "media_cdn"
+# Root folders for collected static files and media files
+STATIC_ROOT = BASE_DIR / "staticfiles"  # Collected static files
+MEDIA_ROOT = BASE_DIR / "media"  # User uploads
 
 STATICFILES_DIRS = [
-    # BASE_DIR / "apps/frontend/next/src",
-    BASE_DIR / "static",
+    BASE_DIR / "static",  # Your source static files
 ]
 
 # reCaptcha
