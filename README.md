@@ -202,17 +202,29 @@ This template includes tools to manage frontend vendor files (Bootstrap, jQuery,
 
 ```plaintext
 my-project/
-├── backend/                 # Django project
-│   ├── manage.py
-│   ├── pyproject.toml      # Python dependencies (uv)
-│   ├── static/             # Source static files
-│   └── staticfiles/        # Collected static files (generated)
-├── compose.yaml            # Docker Compose configuration
-├── dockerfiles/            # Docker configuration files
-├── update_vendors.py       # Script to update vendor files
-├── update_vendor_config.json  # Vendor file configuration
-├── init_project.py         # Project initialization script
-├── .env.example            # Environment variables template
+├── backend/                    # Django project
+│   ├── apps/                   # Django applications
+│   │   ├── accounts/          # User authentication & management
+│   │   └── api/               # API endpoints
+│   ├── core/                   # Core project configuration
+│   │   ├── settings/          # Settings modules (base, dev, prod)
+│   │   ├── asgi.py
+│   │   ├── urls.py
+│   │   └── wsgi.py
+│   ├── static/                 # Source static files (CSS, JS, images)
+│   ├── staticfiles/            # Collected static files (generated)
+│   ├── templates/              # Django HTML templates
+│   ├── media/                  # User uploads (generated)
+│   ├── manage.py               # Django management script
+│   └── pyproject.toml          # Python dependencies (uv)
+├── dockerfiles/                # Docker configuration files
+│   ├── backend.Dockerfile
+│   └── nginx.Dockerfile
+├── update_vendors.py           # Script to update vendor files
+├── update_vendor_config.json   # Vendor file configuration
+├── init_project.py             # Project initialization script
+├── compose.yaml                # Docker Compose configuration
+├── .env.example                # Environment variables template
 ├── .gitignore
 ├── LICENSE
 └── README.md
